@@ -1,0 +1,72 @@
+body{
+background: wheat;
+}
+@media screen and (min-width:250px){
+body{
+    background: green;
+}
+
+@media screen and (min-width:500px){
+body{
+    background:blueviolet;
+}
+
+@media screen and (min-width:750px){
+body{
+    background: yellow;
+}
+
+@media screen and (min-width:1000px){
+body{
+    background: papayawhip;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin: 1rem;
+}
+.box:hover{
+    background: green;
+    font-size: 4rem;
+    height: 400px;
+}
+.box:first-child{
+    background: pink;
+}
+.box:nth-child(5){
+    background: green;
+
+}
+.box:nth-child(even)
+{
+    background:violet;
+    height: 400px;
+    height: 100px;
+    align-self: center; 
+}
+li:first-child{
+    background: pink;
+
+}
+li:nth-child(4){
+    background:red;
+    color: yellow;
+}
+section{
+    height: 75vh;
+    background:#333f;
+}
+section::before{
+content: "this is before text";
+
+}
+section::after{
+    content: "this is after text";
+}

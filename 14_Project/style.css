@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+    font-family: "Odibee Sans";
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: 100px 200px 50px 100px;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    background-color: #b3b3b3;
+    border-radius: 5px;
+}
+.Item{
+    background: white;
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+.Item:first-child{
+    background: green;
+    grid-row:3 / span3;
+  
