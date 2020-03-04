@@ -27,9 +27,7 @@
 }
 ul li {
     display: inline;
-    text-decoration: none;
-    /* some change */
-    
+    text-decoration: none;  
 }
 a{
     text-decoration: none;
