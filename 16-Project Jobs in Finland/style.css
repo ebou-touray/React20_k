@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #ffffff;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.grid-head {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0rem;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+}
+.item {
+  background: white;
+  min-height: 100px;
+}
+.logo {
+  color: darkblue;
+  grid-column: 1 / span 2;
+  margin-left: 40px;
+  padding-top: 30px;
+}
+#logo-text-jobs {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+#logo-text-finland {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.work-in {
+  grid-column: 3 / span 2;
+  text-align: end;
+  color: blue;
+  margin-right: 40px;
+  padding-top: 30px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.navigation {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%; /* Full width */
+}
+ul {
+  background: #2121a6;
+  list-style: none;
+}
+li {
+  color: white;
+
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+}
+li a {
+  color: #fff;
+}
+li:hover {
+  cursor: pointer;
+}
+ul li ul {
+  background: #2121a6;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  background: white;
+  width: 220px;
+}
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+ul li ul li a:link {
+  color: #2121a6;
+}
+
+.search-box {
+  background: #e8e8e4;
+  position: absolute;
+  top: 54px;
+  right: 28.7%;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+
+  border-top: 4px solid white;
+  display: none;
+}
+
+.search-box:before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid white;
+}
+
+.search-box input[type="text"] {
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.search-box input[type="button"] {
+  width: 80px;
+  padding: 5px 0;
+  background: white;
+  color: blue;
+  margin-left: -6px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.fa-search {
+  color: white;
+}
+#search-text {
+  color: blue;
+}
+
+.section-a {
+  background: url("https://source.unsplash.com/featured/laptop,people")
+    no-repeat center center / cover;
+  background-attachment: fixed;
+  height: 550px;
+}
+.body-heading {
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+}
+.body-text1 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+.explore {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.explore-text1 {
+  color: blue;
+  font-size: 2rem;
+  margin-left: 3.9rem;
+}
+.explore-text2 {
+  font-size: 1.5rem;
+  margin-left: 3.9rem;
+}
+.fields-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem;
+}
+.fields {
+  align-content: center;
+  height: 200px;
+  margin-left: 2rem;
+  color: white;
+  list-style-type: none;
+  text-align: left;
+  bottom: 0px;
+  font-size: 30px;
+}
+.fields:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+.fields a:hover {
+  text-decoration: underline;
+}
+.fields:first-child {
+  background: url("https://source.unsplash.com/featured/laptop,academic");
+}
+.fields:nth-child(2) {
+  background: url("https://source.unsplash.com/featured/engineering");
+}
+.fields:nth-child(3) {
+  background: url("https://source.unsplash.com/featured/health");
+}
+.fields:nth-child(4) {
+  background: url("https://source.unsplash.com/featured/hospitality");
+}
+.fields:nth-child(5) {
+  background: url("https://source.unsplash.com/featured/ict");
+}
+.fields:nth-child(6) {
+  background: url("https://source.unsplash.com/featured/manufacturing");
+}
+
+.fields:nth-child(7) {
+  background: url("https://source.unsplash.com/featured/marketing");
+}
+
+.fields:nth-child(8) {
+  background: url("https://source.unsplash.com/featured/managing");
+}
+.fields:nth-child(9) {
+  background: url("https://source.unsplash.com/featured/human services");
+}
+button {
+  background: blue;
+  color: white;
+  height: 40px;
+  width: 140px;
+  margin-left: 3.9rem;
+  margin-top: 1rem;
+}
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.region {
+  justify-content: center;
+  height: 200px;
+  margin-left: 2rem;
+  list-style-type: none;
+  color: white;
+  font-size: 30px;
+}
+.region:hover {
+  opacity: 0.9;
+}
+.region a:hover {
+  text-decoration: underline;
+}
+.region:first-child {
+  background: url("https://source.unsplash.com/featured/turku, Finland");
+}
+.region:nth-child(2) {
+  background: url("https://source.unsplash.com/featured/lapland, Finland");
+}
+.region:nth-child(3) {
+  background: url("https://source.unsplash.com/featured/lakeland, Finland");
+}
+.region:nth-child(4) {
+  background: url("https://source.unsplash.com/featured/South Ostrobothnia");
+}
+.region:nth-child(5) {
+  background: url("https://source.unsplash.com/featured/Helsinki, Finland");
+}
+.region:nth-child(6) {
+  background: url("https://source.unsplash.com/featured/Espoo, Finland");
+}
+.region:nth-child(7) {
+  background: url("https://source.unsplash.com/featured/Tampere, Finland");
+}
+.region:nth-child(8) {
+  background: url("https://source.unsplash.com/featured/Oulu, Finland");
+}
+.region:nth-child(9) {
+  background: url("https://source.unsplash.com/featured/Talent Coastline, Finland");
+}
+.region:nth-child(10) {
+  background: url("https://source.unsplash.com/featured/Kuopio, Finland");
+}
+.region:nth-child(11) {
+  background: url("https://source.unsplash.com/featured/Jyvaskyla, Finland");
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: rem;
+  margin-top: 2rem;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-content: center;
+  height: 150px;
+  list-style-type: none;
+  color: white;
+  background: darkblue;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 55px;
+}
+.footer a {
+  color: white;
+  font-size: 20px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+#ScrollTopBtn {
+  background: #b1bab9;
+  width: 4rem;
+  height: 3rem;
+  color: #0548b3;
+}

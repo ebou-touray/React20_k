@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.menu-container {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  flex-grow: 1;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #878584;
+  font-size: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+li {
+  display: flex;
+  display: inline-block;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: right;
+  justify-content: center;
+}
+.section-a {
+  display: flex;
+  min-height: 320px;
+  background-image: url("https://source.unsplash.com/random/1920x1080/?wallpaper,sky, clouds");
+  background-repeat: no-repeat, cover;
+}
+.section-a-welcome-text {
+  color: white;
+  background-color: #f0a57d;
+  width: 400px;
+  height: 185px;
+  margin-left: 100px;
+  position: relative;
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+button {
+  color: white;
+  background-color: black;
+  height: 40px;
+  width: 150px;
+}
+.readMore-btn {
+  padding-top: 20px;
+}
+.section-b {
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.about-us-text {
+  margin-left: 100px;
+  margin-top: 100px;
+  flex: 1;
+}
+.about-us-image {
+  flex: 1;
+  margin-top: 100px;
+}
+footer {
+  background: #292525;
+  min-height: 700px;
+}
+.footer-form {
+  display: flex;
+}
+#form-wrap {
+  flex: 1;
+  color: white;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.footer-text {
+  flex: 1;
+  color: white;
+  margin-top: 40px;
+}
+.btn-send {
+  background: #f06626;
+  width: 100px;
+}

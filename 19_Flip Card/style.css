@@ -1,0 +1,150 @@
+:root{
+   
+    --light-color: skyblue;
+    --dark-color:sandybrown;
+    --primary-color: skyblue;
+
+}
+body {
+height: 100vh; 
+background: #68FF6D;
+background: -webkit-linear-gradient(top left, #68FF6D, #2F75DB);
+background: -moz-linear-gradient(top left, #68FF6D, #2F75DB);
+background: linear-gradient(to bottom right, #68FF6D, #2F75DB);
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    margin: 5rem;
+}
+.card{
+    height:100%;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.flip-card{
+    height: 200px;
+    width: 150px;
+    perspective: 500px;
+}
+.flip-card-inner{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card-front{
+    background: var(--light-color);
+    background-image: url("https://unsplash.com/photos/aN3PdTgW3tc") no-repeat center center /cover;
+}
+.flip-card-back{
+    background: var(--dark-color);
+    transform: rotateY(180deg);
+
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.animated-circle{
+    background: var(--primary-color);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: grid;
+    text-shadow:  0 0 5px #333;
+    justify-items: center;
+    align-items: center;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+/* @keyframes Myexample{
+    from{
+        background: var(--primary-color);
+    }
+    to{
+        background: var(--dark-color);
+    } */
+
+
+@keyframes example{
+    0%{
+    top:  0;
+    left: 0;
+    }
+    25% {  
+        top:0;
+        left:300px;
+        background:yellowgreen;
+    }
+    50%{
+        top: 300px;
+        left: 300px;
+        background:brown;
+    }
+    75%{
+        top: 300px;
+        left: 0;
+        background:red;
+    }
+    100%{
+        top: 0;
+        left: 0;
+       
+    }
+}
+.fifth-task{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background: goldenrod;
+}
+.fifth-task h3{
+ padding: 25px;
+/* LEFT SIDE*/
+}
+.fifth-task h3::before{
+    content: "";
+    display:block;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 100%;
+    border-left: 3px solid red;
+    transition:  all 1s;
+}
+.fifth-task:hover::before{
+    right: 0;
+}
+.fifth-task::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 200%;
+    border-left: 3px  solid red;
+    transition: all 1s;
+}
+.fifth-task:hover::before{
+    top: 0;
+}
+/*RIGHT SIDE*/

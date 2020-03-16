@@ -4,7 +4,7 @@
 }
 
 .header {
-  background-color: black;
+  background-color: #42403a;
   display: flex;
   flex-direction: row;
   height: 4rem;
@@ -19,7 +19,7 @@
   margin-left: 200px;
 }
 .dropbtn {
-  background-color: black;
+  background-color: #42403a;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -35,14 +35,14 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: lightgrey;
+  background-color: #42403a;
   min-width: 200px;
   z-index: 1;
   border-radius: 0px 0px 12px 12px;
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -50,7 +50,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: white;
+  background-color: #42403a;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -62,17 +62,16 @@
   content: "\25bc";
 }
 
-#section-a {
-  background-image: url("laptop.webp");
-  height: 400px;
-  min-height: 100%;
-  min-width: 100%;
+.section-a {
+  background-image: url("images/laptop.jpg");
+  width: 100%;
+  min-height: 200px;
 }
-#section-c {
+.section-c {
   background: lightgray;
   height: 100%;
 }
-.text1 {
+.section-a-first-text {
   color: white;
   order: 1;
   flex: 1;
@@ -85,7 +84,7 @@
   border-radius: 2em;
   box-sizing: border-box;
   color: aqua;
-  background-color: lig;
+  padding-bottom: 90px;
 }
 .readMore-btn {
   background-color: lightblue;
@@ -102,33 +101,41 @@
   height: 30px;
 }
 
-.text2 {
+.section-a-second-text {
   color: white;
   margin-top: 40px;
+  flex: 1;
 
   margin-left: 200px;
 }
-.text3 {
+.section-b-text {
   margin-top: 40px;
   margin-left: 20px;
+  margin-right: 300px;
 }
-#section-b {
+.section-b {
   display: flex;
   justify-content: right;
 }
-.text4 {
+.meeting-image {
+  height: 200px;
+  width: 300px;
+}
+.section-c-text {
   margin-left: 200px;
   margin-top: 40px;
   padding-top: 10px;
+  padding-top: 40px;
 }
 
 ul {
   margin-left: 2rem;
 }
 
-.image2 {
+.section-b-meeting-container {
   margin-top: 20px;
   margin-left: 200px;
+  flex: 1;
 }
 .progress-bar {
   display: flex;
@@ -143,7 +150,7 @@ ul {
   margin-bottom: 15px;
 }
 #footer {
-  background-color: black;
+  background-color: #42403a;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -195,13 +202,15 @@ ul {
   width: auto;
 }
 
-.progress-bar {
+.skills-bar {
   display: flex;
   margin-left: 105px;
   margin-right: 200px;
   justify-content: space-evenly;
   height: 100%;
   width: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .html5 {
   /* flex: 1; */
@@ -255,5 +264,6 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
