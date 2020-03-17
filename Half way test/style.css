@@ -2,16 +2,22 @@
   margin: 0;
   padding: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
 .menu-bar-container {
   background: #4d4a49;
   color: #ffffff;
-  height: 4rem;
+  height: 5vh;
   display: flex;
   padding-top: 1rem;
 }
 .logo {
   flex: 4;
-  margin-left: 6rem;
+  margin-left: 200px;
 }
 .dropbtn {
   background-color: #4d4a49;
@@ -26,7 +32,6 @@
   display: inline-block;
   flex: 1;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -35,7 +40,6 @@
   z-index: 1;
   border-radius: 0px 0px 12px 12px;
 }
-
 .dropdown-content a {
   color: white;
   padding: 12px 16px;
@@ -58,6 +62,8 @@
 .section-a {
   background: url("images/laptop.jpg");
   height: 400px;
+  width: 100%;
+  background-size: cover;
 }
 .section-a_title {
   color: white;
@@ -79,24 +85,41 @@
   box-sizing: border-box;
   color: aqua;
   padding-bottom: 90px;
+  margin-left: 90px;
 }
 .readMore-btn {
   background-color: lightblue;
   height: 50px;
   width: 100px;
+  margin-left: 200px;
+  margin-top: 90px;
 }
 .section-b {
   display: flex;
   justify-content: right;
+  padding-top: 40px;
+  padding-bottom: 40px;
+   flex-wrap: wrap;
 }
 .section-b-image-container {
   margin-top: 20px;
   margin-left: 200px;
   flex: 1;
 }
+.meeting-image {
+  width: 500px;
+  height: 350px;
+}
+.section-b-text {
+  flex: 1;
+  padding-top: 40px;
+  margin-right: 100px;
+}
 .section-c {
+  display: flex;
   background: lightgray;
   height: 100%;
+  flex-direction: column;
 }
 .section-c-text {
   margin-left: 200px;
@@ -107,9 +130,12 @@
 .skills-bar {
   display: flex;
   box-sizing: border-box;
-  justify-content: center;
+  justify-content: space-between;
+  margin-left: 200px;
   height: 100%;
   margin-top: 40px;
+  margin-right: 500px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
 }
 .html5 {
@@ -139,6 +165,24 @@
   margin-bottom: 20px;
   height: 120px;
   width: 200px;
+}
+#icon {
+  padding-top: 10px;
+  padding-left: 90px;
+  font-size: 40px;
+}
+#js-icon {
+  padding-top: 10px;
+  padding-left: 90px;
+  font-size: 40px;
+  position: relative;
+}
+#label {
+  padding-left: 90px;
+}
+#progress {
+  padding-left: 20px;
+  padding-top: 10px;
 }
 .button-scroll-top {
   margin-left: 335px;
