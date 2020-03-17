@@ -1,5 +1,5 @@
-body{
-    background:#f7f0d0
+body {
+  background: #f7f0d0;
 }
 
 #title {
@@ -10,10 +10,14 @@ body{
 #author {
   text-align: center;
 }
+h4 {
+  text-align: center;
+}
 p {
   text-align: center;
   font-size: 20px;
+  line-height: 2;
 }
-#author-name{
-    color: #8a68cc;
+#author-name {
+  color: #8a68cc;
 }
